@@ -1,0 +1,212 @@
+/* Google Fonts */
+body {
+  font-family: "Poppins", "Nanum Pen Script", cursive, sans-serif;
+  background: linear-gradient(135deg, #fbe5f6, #d6ccff);
+  color: #5a3e85;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 1000px;
+  background: #fff0f6;
+  padding: 25px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(90, 62, 133, 0.3);
+  text-align: center;
+}
+
+.subtitle > span {
+  color: #2f64ea;
+  font-weight: bold; /*文字を太くする*/
+  text-decoration: underline; /*下線を引く*/
+  font-size: 20px;
+}
+
+header h1 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #cb42cf;
+  text-shadow: 1px 1px 3px #f0c3ff;
+  padding-bottom: 50px;
+
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a57fd9;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.input-area label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 30px;
+  color: #9058a5;
+}
+
+input[type="date"] {
+  width: 50%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid #d8b4ff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  outline-color: #b35fda;
+}
+
+h2 {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.oshi-list {
+  display: flex;
+  flex-wrap: wrap; /* ここ追加：折り返しOKにする */
+  justify-content: center;
+  gap: 20px;
+
+  padding-bottom: 50px;
+  max-width: 600px; /* 最大2枚並ぶ幅 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oshi-item {
+  cursor: pointer;
+  font-weight: 700;
+  color: #8e4dbd;
+  font-size: 0.9rem;
+  user-select: none;
+
+  display: flex;
+  flex-direction: column; /* ← 縦並び */
+  align-items: center; /* ← 中央に揃える */
+  text-align: center; /* ← テキストも中央に */
+
+  transition: transform 0.3s ease;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  min-width: 150px;
+}
+
+.oshi-item input[type="radio"] {
+  display: none;
+}
+
+.oshi-item img {
+  width: 200px;
+  height: 280px;
+  border-radius: 15%;
+  border: 3px solid transparent;
+  box-shadow: 0 4px 8px rgba(148, 96, 193, 0.5);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* スムーズな動き */
+  border: 4px solid #fdd9ff;
+  box-shadow: 0 0 20px #fdd9ff, 0 0 30px #d3a4ff;
+}
+
+.oshi-item img:hover {
+  transform: scale(1.2); /* 1.1倍に拡大 */
+}
+
+.oshi-item input[type="radio"]:checked + img {
+  border-color: #ff84d1;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ffb6e6;
+
+  position: relative;
+}
+
+.oshi-item input[type="radio"]:checked + img::after {
+  content: "💖";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 24px;
+}
+
+.oshi-item span {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: block;
+}
+
+.btn {
+  background: linear-gradient(to right, #ff8acb, #a583f3);
+  color: white;
+  font-size: 1.3rem;
+  padding: 14px 0;
+  box-shadow: 0 6px 20px rgba(255, 128, 185, 0.6);
+  border: 2px solid white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-radius: 7%;
+  padding: 10px 30px 10px 30px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 128, 185, 0.8);
+}
+
+.result {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #cba2db;
+}
+
+.result h2 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2rem;
+  color: #8a3fa3;
+  margin-bottom: 15px;
+}
+
+#result-photo {
+  width: 300px;
+  height: 390px;
+  border-radius: 20%;
+  box-shadow: 0 5px 20px #b75bbaaa;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+#result-message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #70458c;
+  margin-bottom: 15px;
+}
+
+.footer-message {
+  font-style: italic;
+  color: #b57fcc;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container h1 {
+    font-size: 27px;
+    margin-left: 7px;
+    text-decoration: underline;
+  }
+  .oshi-list {
+    padding-right: 50px;
+  }
+
+  .oshi-item span {
+    padding-left: 50px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
