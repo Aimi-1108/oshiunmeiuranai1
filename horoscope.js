@@ -10,12 +10,12 @@ exports.handler = async function (event, context) {
     cancer: "推しに気持ちが届く日かも📩🩵",
     leo: "推しがウィバースライブをするかも📸💛",
     virgo: "推しの可愛さに気づくかも💎🩵",
-    libra: "推しの意外なケミを見れるかも🫂💕",
+    libra: "推しと推しの意外なケミを見れるかも🫂💕",
     scorpio: "気の合うENGENEに出会えるかも👩🏼‍❤️‍👩🏻",
     sagittarius: "トレカを自引き出来るかも🃏💖",
-    capricorn: "推し運がう良い日かも💚🍀",
+    capricorn: "推し運が良い日かも💚🍀",
     aquarius: "推しケミでウィバースライブをするかも💓🧑🏼‍❤️‍💋‍🧑🏻",
-    pisces: "コメントを読んでくれるかも📝💝",
+    pisces: "推しがコメントを読んでくれるかも📝💝",
   };
 
   const signLower = sign.toLowerCase();
