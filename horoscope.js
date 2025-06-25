@@ -1,6 +1,6 @@
-// horoscope.js
+// netlify/functions/horoscope.js
 
-export async function handler(event, context) {
+exports.handler = async function (event, context) {
   const { sign } = JSON.parse(event.body);
 
   const fortunes = {
@@ -25,4 +25,4 @@ export async function handler(event, context) {
     statusCode: 200,
     body: JSON.stringify({ fortune: message }),
   };
-}
+};
