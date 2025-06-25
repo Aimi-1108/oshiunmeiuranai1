@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>✨星占い＆推し相性診断✨</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>その推し、運命です。</h1>
+        <p class="subtitle">
+          今日のあなたの運勢と<span>ENHYPEN</span>の相性をチェック！
+        </p>
+      </header>
+
+      <section class="input-area">
+        <label for="birthday">🎂 あなたの誕生日を教えてね</label>
+        <input type="date" id="birthday" />
+
+        <h2>💖 推しを選んでね</h2>
+        <div id="oshi-list" class="oshi-list">
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi1" />
+            <img src="./images/jw.png" alt="JUNGWON" />
+            <span>JUNGWON</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi2" />
+            <img src="./images/hs.png" alt="HEESEUNG" />
+            <span>HEESEUNG</span>
+          </label>
+          <!-- 他の推しも追加OK -->
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi3" />
+            <img src="./images/js.png" alt="JAY" />
+            <span>JAY</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi4" />
+            <img src="./images/jy.png" alt="JAKE" />
+            <span>JAKE</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi5" />
+            <img src="./images/sh.png" alt="SUNGHOON" />
+            <span>SUNGHOON</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi6" />
+            <img src="./images/sn.png" alt="SUNOO" />
+            <span>SUNOO</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi7" />
+            <img src="./images/nk.png" alt="NI-KI" />
+            <span>NI-KI</span>
+          </label>
+          <label class="oshi-item">
+            <input type="radio" name="oshi" value="oshi8" />
+            <img src="./images/en.png" alt="ENHYPEN" />
+            <span>ENHYPEN</span>
+          </label>
+        </div>
+
+        <button id="submit-btn" class="btn">診断スタート💫</button>
+      </section>
+
+      <section id="result" class="result" style="display: none">
+        <h2>✨診断結果✨</h2>
+        <img id="result-photo" src="" alt="推しの写真" />
+        <p id="result-message"></p>
+        <p class="footer-message">
+          今日の一言：✨あなたに素敵なことが起こりますように！✨
+        </p>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
