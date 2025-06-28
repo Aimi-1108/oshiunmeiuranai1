@@ -192,7 +192,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .container h1 {
     font-size: 27px;
     margin-left: 7px;
